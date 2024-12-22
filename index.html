@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game League Of Legend Addition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/assistor.css" />
+  </head>
+  <body>
+    <div id="landing-page" class="container">
+      <div id="title">
+        <h1 id="game-title">
+          LEAGUE <span id="span-title">OF <br /></span> LEGENDS
+          <span id="span-end">.mg</span>
+        </h1>
+      </div>
+      <div class="start-button-div">
+        <button class="start-button" onclick="startGame()">Play</button>
+      </div>
+      <div class="diff-box">
+        <div id="diff-text"><p class="margin-0px">Difficulty</p></div>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="clickEasy()">
+            Easy
+          </button>
+          <button type="button" class="toggle-btn" onclick="clickMedium()">
+            Medium
+          </button>
+          <button type="button" class="toggle-btn" onclick="clickHard()">
+            Hard
+          </button>
+        </div>
+      </div>
+      <div id="highest-score-screen">
+        Highest Score: <span id="highest-score"></span>
+      </div>
+    </div>
+
+    <div id="game-page" style="display: none">
+      <div id="game-bar">
+        <div>Score: <span id="score"></span></div>
+        <div>
+          <button
+            class="in-game-button"
+            id="restart-button"
+            onclick="startGame()"
+          >
+            <i class="ri-reset-right-line"></i>
+          </button>
+          <button class="in-game-button" id="exit-button" onclick="exitGame()">
+            <i class="ri-logout-box-r-line"></i>
+          </button>
+        </div>
+      </div>
+      <div id="game-board"></div>
+    </div>
+
+    <div id="game-over-page" style="display: none">
+      <div class="game-over-page">
+        <div>
+          <h2 id="game-over-message"></h2>
+        </div>
+        <div class="result-screen">
+          <p>Final Score: <span id="final-score"></span></p>
+        </div>
+        <div class="result-screen">
+          <p>Highest Score: <span id="game-over-highest-score"></span></p>
+        </div>
+        <button class="start-button" onclick="startGame()">Play Again</button>
+      </div>
+    </div>
+    <audio id="success" src="./audio/success-221935.mp3" preload="auto"></audio>
+    <audio id="fail" src="./audio/fail-234710.mp3" preload="auto"></audio>
+    <script src="./js/master.js"></script>
+  </body>
+</html>
