@@ -63,7 +63,7 @@ function generateCards(difficulty) {
         score = 400;
     }
 
-    let colors = ["url(../imgs/Akali.jpg)", "url(../imgs/Aurelion_Sol.jpg)", "url(../imgs/Ezreal.jpg)", "url(../imgs/Master_Yi.jpg)", "url(../imgs/Riven.jpg)", "url(../imgs/Sett.jpg)", "url(../imgs/Tahm_Kench.jpg)", "url(../imgs/Volibear.jpg)", "url(../imgs/Warwick.jpg)", "url(../imgs/Yasuo.jpg)", "url(../imgs/Yuumi.jpg)", "url(../imgs/Zed.jpg)"];
+    let colors = ["url(./imgs/Akali.jpg)", "url(./imgs/Aurelion_Sol.jpg)", "url(./imgs/Ezreal.jpg)", "url(./imgs/Master_Yi.jpg)", "url(./imgs/Riven.jpg)", "url(./imgs/Sett.jpg)", "url(./imgs/Tahm_Kench.jpg)", "url(./imgs/Volibear.jpg)", "url(./imgs/Warwick.jpg)", "url(./imgs/Yasuo.jpg)", "url(./imgs/Yuumi.jpg)", "url(./imgs/Zed.jpg)"];
     let selectedColors = colors.slice(0, cardCount / 2);
     let allCards = [...selectedColors, ...selectedColors];
 
